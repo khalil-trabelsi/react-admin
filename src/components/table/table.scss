@@ -1,0 +1,26 @@
+.table {
+  .cellWrapper {
+    display: flex;
+    align-items: center;
+
+    .image {
+      width: 42px;
+      height: 42px;
+      margin-right: 10px;
+      //   border-radius: 50%;
+      //   object-fit: cover;
+    }
+  }
+  .status {
+    padding: 5px;
+    border-radius: 5px;
+    &.Approved {
+      color: green;
+      background: rgba(0, 128, 0, 0.151);
+    }
+    &.Pending {
+      color: goldenrod;
+      background: rgba(189, 189, 3, 0.103);
+    }
+  }
+}

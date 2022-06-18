@@ -1,0 +1,83 @@
+.dataTable {
+  padding: 20px;
+  .cellWithImg {
+    display: flex;
+    align-items: center;
+    .cellImg {
+      height: 32px;
+      width: 32px;
+      border-radius: 50%;
+      object-fit: cover;
+      margin-right: 15px;
+    }
+  }
+  .cellWithStatus {
+    border-radius: 5px;
+    padding: 5px;
+    &.active {
+      color: green;
+      background: rgba(0, 128, 0, 0.151);
+    }
+    &.passive {
+      color: goldenrod;
+      background: rgba(189, 189, 3, 0.103);
+    }
+  }
+  .cellAction {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    .viewButton {
+      padding: 2px 5px;
+      border-radius: 5px;
+      color: darkblue;
+      cursor: pointer;
+      border: 1px solid rgba(0, 0, 139, 0.349);
+    }
+    .deleteBtn {
+      padding: 2px 5px;
+      cursor: pointer;
+      border-radius: 5px;
+      color: crimson;
+      border: 1px solid rgba(255, 0, 0, 0.548);
+    }
+  }
+  .card-heading {
+    display: flex;
+    width: 100%;
+    font-size: 20px;
+    color: gray;
+    margin-bottom: 10px;
+    align-items: center;
+    justify-content: space-between;
+    .navItem {
+      text-decoration: none;
+      color: green;
+      font-weight: 400;
+      border: 1px solid green;
+      padding: 5px;
+      border-radius: 5px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+    // .card-heading-title {
+    //   position: relative;
+    //   font-weight: 700;
+    //   padding-bottom: 10px;
+    //   border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+    //   margin-bottom: 0;
+    //   h4 {
+    //     font-size: 1.2rem;
+    //   }
+    // }
+    // .card-heading-title::after {
+    //   content: "";
+    //   position: absolute;
+    //   bottom: -1px;
+    //   left: 0;
+    //   width: 50px;
+    //   height: 3px;
+    //   background-color: #b1b0b0;
+    // }
+  }
+}
